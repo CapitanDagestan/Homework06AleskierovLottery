@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class Lottery {
@@ -10,6 +11,8 @@ public class Lottery {
             company[i] = random.nextInt(10);
             player[i] = random.nextInt(10);
         }
+        Arrays.sort(company);
+        Arrays.sort(player);
         System.out.print("Виграшний білет: ");
         for (int j = 0; j < 7; j++) {
             if (company[j] == player[j]) {
