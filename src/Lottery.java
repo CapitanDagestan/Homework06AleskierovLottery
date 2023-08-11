@@ -13,27 +13,13 @@ public class Lottery {
         }
         Arrays.sort(company);
         Arrays.sort(player);
-        System.out.print("Виграшний білет: ");
+        System.out.println("Виграшний білет: " + Arrays.toString(company));
         for (int j = 0; j < 7; j++) {
             if (company[j] == player[j]) {
                 coincidence++;
             }
-            if (j != 6) {
-                System.out.print(company[j] + " ");
-            }
-            if (j == 6) {
-                System.out.println(company[j]);
-            }
         }
-        System.out.print("Білет гравця:    ");
-        for (int k = 0; k < 7; k++) {
-            if (k != 6) {
-                System.out.print(player[k] + " ");
-            }
-            if (k == 6) {
-                System.out.println(player[k]);
-            }
-        }
+        System.out.println("Білет гравця:    " + Arrays.toString(player));
         System.out.println("Кількість збігів: " + coincidence);
         if (coincidence > 4) {
             System.out.println("Гравець вийграв машину.");
