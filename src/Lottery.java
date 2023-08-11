@@ -35,5 +35,12 @@ public class Lottery {
             }
         }
         System.out.println("Кількість збігів: " + coincidence);
+        if (coincidence > 4) {
+            System.out.println("Гравець вийграв машину.");
+        } else if (coincidence == 4) {
+            System.out.println("Гравець вийграв 100 usd.");
+        } else {
+            System.out.println("Гравець програв.");
+        }
     }
 }
