@@ -22,7 +22,7 @@ public class Lottery {
                 System.out.println(company[j]);
             }
         }
-        System.out.print("Білет гравця: ");
+        System.out.print("Білет гравця:    ");
         for (int k = 0; k < 7; k++) {
             if (k != 6) {
                 System.out.print(player[k] + " ");
